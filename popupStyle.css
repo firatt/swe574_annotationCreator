@@ -1,0 +1,51 @@
+html { 
+  visibility:hidden; 
+}
+
+body {
+  width: 400px;
+  height: 200px;
+  font-family:courier,arial,helvetica;
+}
+
+#welcome {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+#ready {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+#divLevel1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#loginDiv {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#annotationsDiv {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+#username {
+  margin: 0px 0px;
+  display: inline;
+}
+
+p {
+  margin: 0px 0px;
+}
+
+button {
+  margin-top: 4px;
+}
+
+#logoutBtn {
+  margin-top: 8px;
+}

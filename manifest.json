@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  "name": "Happy Annotation Creater",
+  "version": "1.0",
+  "description": "An annotation creater extension for SWE 578 class!",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "browser_action": {
+    "default_icon": "icon128.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "jquery-3.4.1.min.js",
+      "eventPage.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "storage",
+    "https://happy-annotation-server.herokuapp.com/*",
+    "http://localhost:8080/*",
+    "http://localhost:3000/*",
+    "http://127.0.0.1:5500/*",
+    "http://18.220.59.96:8002/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost:3000/*",
+        "http://127.0.0.1:5500/*",
+        "http://18.220.59.96:8002/*",
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "jquery-3.4.1.min.js",
+        "annotation.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Annotation Extension!</title>
+  <link rel="stylesheet" href="popupStyle.css">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <h3 id="welcome">Welcome to Happy Annotation Creater!!</h3>
+
+  <div id="divLevel1">
+    <div id="loginDiv">
+      <input type="text" name="" id="username" placeholder="Username">
+      <br>
+      <input type="password" name="" id="password" placeholder="Password">
+      <br>
+      <button id="loginBtn">Login</button>
+      <button id="registerBtn">Register</button>
+    </div>
+
+    <div id="annotationsDiv">
+      <h3 id="ready">Ready to create annotations for <span id="userNameForH4Element">anonym</span>!</h3>
+      <h3 id="ready">Set Motivation</h3>
+      <input type="text" name="" id="motivation" placeholder="Motivation">
+      <button id="motivationBtn">Set Motivation</button>
+      <button id="motivationRstBtn">Reset Motivation</button>
+
+      <p>Current value is "<span id="motSpan">highlighting</span>"</p>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
